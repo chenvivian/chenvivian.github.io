@@ -1,5 +1,4 @@
-<!DOCTYPE html>
 <html>
-about me
+THISIS MY ABOUT ME
 
 </html>
