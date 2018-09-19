@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 	<title>Vivian Chen</title>
@@ -12,7 +11,4 @@
         </ul>
 </nav>
 
-<br><br><br>
-
-</body>
 </html>
