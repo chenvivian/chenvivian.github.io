@@ -51,6 +51,13 @@ p.text{
 	font-size: 15px;
 }
 
+p.smalltext{
+	font-family: Futura, sans-serif;
+	text-align: right;
+	font-style: none;
+	font-size: 10px;
+}
+
 table.general{
 	font-family: Futura, sans-serif;
 	font-size: 18px;
@@ -58,7 +65,7 @@ table.general{
 	background-color: white;
 	width: 80%;
 	margin: auto;
-	padding: 10px;
+	padding: 1%;
 }
 
 img.splashlogo{
