@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+<em><p class="credits">disclaimer*site not used by actual club</p></em>
+	<title>MaCrew</title>
+	<nav>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="html/mission.html">MISSION</a></li>
+            <li><a href="html/dancers.html">DANCERS</a></li>
+            <li><a href="html/events.html">EVENTS</a></li>
+            <li><a href="html/shop.html">SHOP</a></li>
+            <li><a href="html/contact.html">CONTACT</a></li>
+      		<li>
+	 			<body onLoad="MM_preloadImages('logos/fb1.png','logos/insta1.png')">
+	  			<a href="https://www.facebook.com/MacaulayCrew" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fb','','logos/fb1.png',1)" target="_blank"><img src="logos/fb.png" id="fb"></a>
+      		</li>
+      		<li>
+      			<a href="https://www.instagram.com/macaulaycrew/" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('insta','','logos/insta1.png',1)" target="_blank"><img src="logos/insta.png" id="insta"></a>
+      		</li>
+      </ul>
+</nav>
+
+<br><br><br>
+
+	<table class="title">
+		<tr>
+			<td>MACREW</td>
+		</tr>
+	</table>
+	
+<!--http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video-->
+
+	<video playsinline autoplay muted loop poster="pics/macrew.png" id="bgvid">
+    	<source src="video/macrew.mp4" type="video/mp4">
+	</video>
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+
+</body>
+</html>

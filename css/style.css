@@ -38,12 +38,6 @@ nav  ul  li  a{
     background-color: none;
 }
 
-a:link {color: black;
-		text-decoration: none;}
-a:visited {color: black;}
-a:hover {color: grey;}
-a:active {color: grey;}
-
 p.text{
 	font-family: Futura, sans-serif;
 	text-align: left;
@@ -58,6 +52,30 @@ p.smalltext{
 	font-size: 10px;
 }
 
+p.textgdtitle{
+	font-family: Futura, sans-serif;
+	text-align: left;
+	font-style: italic;
+	font size: 25px;
+	color: #423FA8;
+}
+
+p.textlinks{
+	text-align: center;
+	font-family: Futura, sans-serif;
+	text-indent: 2%;
+	font-style: none;
+	font-size: 18px;
+}
+
+p.textgdbody{
+	font-family: Futura, sans-serif;
+	text-align: left;
+	text-indent: 2%;
+	font-style: none;
+	font-size: 14px;
+}
+
 table.general{
 	font-family: Futura, sans-serif;
 	font-size: 18px;
@@ -68,9 +86,58 @@ table.general{
 	padding: 1%;
 }
 
+table.gdgeneral{
+	font-family: Futura, sans-serif;
+	font-size: 18px;
+	color: grey;
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	padding: 1%;
+	vertical-align: text-top;
+}
+
 img.splashlogo{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 40%;
+}
+
+a:link {color: black;
+		text-decoration: none;}
+a:visited {color: black;}
+a:hover {color: grey;}
+a:active {color: grey;}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: none;
+    padding: 20px;
 }
