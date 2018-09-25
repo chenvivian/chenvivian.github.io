@@ -33,22 +33,63 @@
 		</tr>
 		<tr>
 			<td width ="65%">
-				<p class= "textgdtitle">Spring, 2017: GTECH 201 Introduction to GIS</p>
-				<p class ="textgdbody">For my final project for this class, I explored the question: What is the relationship between the distribution of hotels and Airbnb rentals in New York City?<br>
-				<br><em>Maps to be uploaded soon</em>
-<!--- >
-					<img src="../work/gtech201/AirbnbMap.png" alt="Airbnb Listings and Hotels in NYC" style="height:100%;max-height:150px">
-
-					<img src="../work/gtech201/MedianHotel.png" alt="Median Household Incomes and Hotels in NYC" style="height:100%;max-height:150px">
-<!-->
+				<p class= "textgdtitle">Spring, 2018: GTECH 361 GeoInformatics</p>
+				<p class ="textgdbody">For my final project for this class, I analyzed the spatial distribution of Urgent Care Centers in NYC in comparison to median household income.<br>
+				<br><em>Click to enlarge</em><br>
+					<img class="myImages" id="myImg" src="../work/gtech361/VCHEN_Gtech361_FinalPoster.png" alt="Urgent Care Centers in NYC: Distribution for Accessibility" style="height:100%;max-height:150px">
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
 				</p>
 			</td>
 			<td>
-				<p class ="textlinks"><a href ="../work/gtech201/AirbnbInNYCPresentation.pdf" target="_blank">Powerpoint Presentation</a><img src ="../png/airbnbpvw.png" width ="100%"></p>
+				<p class ="textlinks"><a href ="../work/gtech361/VCHEN_Gtech361.pdf" target="_blank">Powerpoint Presentation (PDF)</a><img src ="../work/gtech361/361pvw.png" width ="100%"></p>
 			</td>
 		</tr>
 		<tr>
+			<td width ="65%">
+				<p class= "textgdtitle">Spring, 2018: GTECH 38501 Urban Applications of GIS</p>
+				<p class ="textgdbody">I examined the proximity of restaurants and grab&go places to subway lines and stations.<br>
+				<br><em>Click to enlarge</em><br>
+					<img class="myImages" id="myImg" src="../work/gtech38501/MapA_Restaurants.png" alt="Map A" style="height:100%;max-height:150px">
 
+					<img class="myImages" id="myImg" src="../work/gtech38501/MapB_GrabandGo.png" alt="Map B" style="height:100%;max-height:150px">
+
+					<img class="myImages" id="myImg" src="../work/gtech38501/Hotspot.png" alt="Hotspots" style="height:100%;max-height:150px">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</p>
+			</td>
+			<td>
+				<p class ="textlinks"><a href ="../work/gtech38501/VCHEN_Gtech385.pdf" target="_blank">Powerpoint Presentation (PDF)</a><img src ="../work/gtech38501/385pvw.png" width ="100%"></p>
+			</td>
+		</tr>
+		<tr>
+			<td width ="65%">
+				<p class= "textgdtitle">Spring, 2017: GTECH 201 Introduction to GIS</p>
+				<p class ="textgdbody">For my final cartographic studio project for this class, I explored the question: What is the relationship between the distribution of hotels and Airbnb rentals in New York City?<br>
+				<br><em>Click to enlarge</em><br>
+					<img class="myImages" id="myImg" src="../work/gtech201/AirbnbMap.png" alt="Airbnb Listings and Hotels in NYC" style="height:100%;max-height:150px">
+
+					<img class="myImages" id="myImg" src="../work/gtech201/MedianHotel.png" alt="Median Household Incomes and Hotels in NYC"
+					style="height:100%;max-height:150px">
+
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+				</p>
+			</td>
+			<td>
+				<p class ="textlinks"><a href ="../work/gtech201/AirbnbInNYCPresentation.pdf" target="_blank">Powerpoint Presentation (PDF)</a><img src ="../work/gtech201/airbnbpvw.png" width ="100%"></p>
+			</td>
 		</tr>
 	</table>
 
@@ -76,5 +117,36 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
 
+
+//	https://www.w3schools.com/howto/howto_css_modal_images.asp
+//	https://stackoverflow.com/questions/47798971/several-modal-images-on-page
+
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
 
 </html>
