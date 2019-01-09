@@ -147,6 +147,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
+    font-family: Futura, sans-serif;
     background-color: none;
     padding: 20px;
 }
