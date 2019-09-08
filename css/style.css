@@ -54,6 +54,13 @@ p.text{
 	font-size: 15px;
 }
 
+p.rtext{
+	font-family: Calibri, sans-serif;
+	text-align: right;
+	font-style: none;
+	font-size: 15px;
+}
+
 p.smalltext{
 	font-family: Calibri, sans-serif;
 	text-align: right;
