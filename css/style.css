@@ -1,9 +1,9 @@
 @font-face{
-	font-family: Calibri;
+	font-family: Calibri, sans-serif;
 }
 
 div{
-	font-family: Calibri;
+	font-family: Calibri, sans-serif;
 	font-size: 15px;
 }
 
