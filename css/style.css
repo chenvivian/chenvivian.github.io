@@ -1,10 +1,10 @@
 @font-face{
-	font-family: myMainFont;
-	src: url(../fonts/futura/futura medium bt.ttf);
+	font-family: calibri;
 }
 
 div{
-	font-family: myMainFont;
+	font-family: calibri;
+	font-size: 15px;
 }
 
 header{
@@ -18,7 +18,7 @@ nav{
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		font-family: Futura, sans-serif;
+		font-family: Calibri, sans-serif;
 		text-align: center;
 		font-style: bold;
 		font-size: 18px;
@@ -35,7 +35,7 @@ nav ul li{
 }
 
 nav  ul  li  a{
-    font-family: Futura, sans-serif;
+    font-family: Calibri, sans-serif;
     font-size: 18px;
     font-style: none;
     color: black;
@@ -48,21 +48,21 @@ nav  ul  li  a{
 }
 
 p.text{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	text-align: left;
 	font-style: none;
 	font-size: 15px;
 }
 
 p.smalltext{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	text-align: right;
 	font-style: none;
 	font-size: 10px;
 }
 
 p.textgdtitle{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	text-align: left;
 	font-style: italic;
 	font size: 25px;
@@ -71,14 +71,14 @@ p.textgdtitle{
 
 p.textlinks{
 	text-align: center;
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	text-indent: 2%;
 	font-style: none;
 	font-size: 18px;
 }
 
 p.textgdbody{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	text-align: left;
 	text-indent: 2%;
 	font-style: none;
@@ -86,7 +86,7 @@ p.textgdbody{
 }
 
 table.general{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	font-size: 18px;
 	color: grey;
 	background-color: white;
@@ -96,7 +96,7 @@ table.general{
 }
 
 table.gdgeneral{
-	font-family: Futura, sans-serif;
+	font-family: Calibri, sans-serif;
 	font-size: 18px;
 	color: grey;
 	background-color: white;
